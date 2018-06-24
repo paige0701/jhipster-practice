@@ -4,14 +4,20 @@ import { RouterModule } from '@angular/router';
 import { RouterPracticeSharedModule } from '../shared';
 
 import { HOME_ROUTE, HomeComponent } from './';
+import {FirstHalfComponent} from "./firstHalf.component";
+import {SecondHalfComponent} from "./secondHalf.component";
+import {AboutComponent} from "./about.component";
 
 @NgModule({
     imports: [
         RouterPracticeSharedModule,
-        RouterModule.forChild([ HOME_ROUTE ])
+        RouterModule.forChild(HOME_ROUTE)
     ],
     declarations: [
         HomeComponent,
+        FirstHalfComponent,
+        SecondHalfComponent,
+        AboutComponent
     ],
     entryComponents: [
     ],
